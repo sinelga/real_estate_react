@@ -1,0 +1,17 @@
+{"db":[
+    {
+        "id": 0,
+        "type": "apartment",
+        "actions":{"action": [{"type":"selling"},{"type":"rent"}]},
+        "images":{"image": [{"file":"1.jpg","description":"hole"},{"file":"2.jpg","description":"kitchen"}]},
+        "text": "Hey there!"
+    },
+    {
+        "id": 1,
+        "type": "apartment",
+      	"actions":{"action": [{"type":"selling"},{"type":"rent"}]},
+      	 "images":{"image": [{"file":"1.jpg","description":"hole"},{"file":"2.jpg","description":"kitchen"}]},
+        "text": "React is *great*!"
+    }
+
+]}
