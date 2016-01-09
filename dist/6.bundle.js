@@ -1,6 +1,6 @@
 webpackJsonp([6],{
 
-/***/ 220:
+/***/ 229:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9,7 +9,7 @@ webpackJsonp([6],{
 	  path: ':assignmentId',
 	  getComponent: function getComponent(location, cb) {
 	    __webpack_require__.e/* nsure */(7, function (require) {
-	      cb(null, __webpack_require__(221));
+	      cb(null, __webpack_require__(230));
 	    });
 	  }
 	};
