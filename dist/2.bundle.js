@@ -1,1 +1,69 @@
-webpackJsonp([2],{120:function(e,t,n){"use strict";function r(e){return e&&e.__esModule?e:{"default":e}}function o(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function a(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function u(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}var i=function(){function e(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(t,n,r){return n&&e(t.prototype,n),r&&e(t,r),t}}(),l=n(3),c=r(l),f=n(121),s=r(f),p=n(122),d=r(p),b={};b.sidebar={"float":"left",width:200,padding:20,borderRight:"1px solid #aaa",marginRight:20};var y=function(e){function t(){return o(this,t),a(this,Object.getPrototypeOf(t).apply(this,arguments))}return u(t,e),i(t,[{key:"render",value:function(){var e=this.props,t=e.sidebar,n=e.main,r=e.children,o=e.params,a=COURSES[o.courseId],u=void 0;return u=t&&n?c["default"].createElement("div",null,c["default"].createElement("div",{className:"Sidebar",style:b.sidebar},t),c["default"].createElement("div",{className:"Main",style:{padding:20}},n)):r?r:c["default"].createElement(s["default"],null),c["default"].createElement("div",null,c["default"].createElement("h2",null,a.name),c["default"].createElement(d["default"],{course:a}),u)}}]),t}(c["default"].Component);e.exports=y},121:function(e,t,n){"use strict";function r(e){return e&&e.__esModule?e:{"default":e}}function o(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function a(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function u(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}var i=function(){function e(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(t,n,r){return n&&e(t.prototype,n),r&&e(t,r),t}}();Object.defineProperty(t,"__esModule",{value:!0});var l=n(3),c=r(l),f=function(e){function t(){return o(this,t),a(this,Object.getPrototypeOf(t).apply(this,arguments))}return u(t,e),i(t,[{key:"render",value:function(){return c["default"].createElement("div",null,c["default"].createElement("h3",null,"Course Dashboard"))}}]),t}(c["default"].Component);t["default"]=f},122:function(e,t,n){"use strict";function r(e){return e&&e.__esModule?e:{"default":e}}function o(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function a(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function u(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}var i=function(){function e(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(t,n,r){return n&&e(t.prototype,n),r&&e(t,r),t}}();Object.defineProperty(t,"__esModule",{value:!0});var l=n(3),c=r(l),f=n(26),s={};s.nav={borderBottom:"1px solid #aaa"},s.link={display:"inline-block",padding:10,textDecoration:"none"},s.activeLink={color:"red"};var p=function(e){function t(){return o(this,t),a(this,Object.getPrototypeOf(t).apply(this,arguments))}return u(t,e),i(t,[{key:"render",value:function(){var e=this.props.course,t=[["announcements","Announcements"],["assignments","Assignments"],["grades","Grades"]];return c["default"].createElement("nav",{style:s.nav},t.map(function(t,n){return c["default"].createElement(f.Link,{key:t[0],activeStyle:0===n?{paddingLeft:0}:s.activeLink,style:0===n?{paddingLeft:0}:s.link,to:"/course/"+e.id+"/"+t[0]},t[1])}))}}]),t}(c["default"].Component);t["default"]=p}});
+webpackJsonp([2],{
+
+/***/ 223:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = {
+	  path: 'announcements',
+
+	  getChildRoutes: function getChildRoutes(location, cb) {
+	    __webpack_require__.e/* nsure */(3, function (require) {
+	      cb(null, [__webpack_require__(224)]);
+	    });
+	  },
+	  getComponents: function getComponents(location, cb) {
+	    __webpack_require__.e/* nsure */(5, function (require) {
+	      cb(null, {
+	        sidebar: __webpack_require__(226),
+	        main: __webpack_require__(227)
+	      });
+	    });
+	  }
+	};
+
+/***/ },
+
+/***/ 228:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = {
+	  path: 'assignments',
+
+	  getChildRoutes: function getChildRoutes(location, cb) {
+	    __webpack_require__.e/* nsure */(6, function (require) {
+	      cb(null, [__webpack_require__(229)]);
+	    });
+	  },
+	  getComponents: function getComponents(location, cb) {
+	    __webpack_require__.e/* nsure */(8, function (require) {
+	      cb(null, {
+	        sidebar: __webpack_require__(231),
+	        main: __webpack_require__(232)
+	      });
+	    });
+	  }
+	};
+
+/***/ },
+
+/***/ 233:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = {
+	  path: 'grades',
+	  getComponent: function getComponent(location, cb) {
+	    __webpack_require__.e/* nsure */(9, function (require) {
+	      cb(null, __webpack_require__(234));
+	    });
+	  }
+	};
+
+/***/ }
+
+});

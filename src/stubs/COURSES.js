@@ -2,6 +2,7 @@ global.COURSES = [
   {
     id: 0,
     name: 'React Fundamentals',
+    mainimage: '1.jpg',
     grade: 'B',
     announcements: [
       {
@@ -24,6 +25,7 @@ global.COURSES = [
   {
     id: 1,
     name: 'Reusable React Components',
+    mainimage: '1.jpg',
     grade: 'A-',
     announcements: [
       {

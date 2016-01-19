@@ -1,5 +1,6 @@
 module.exports = {
   path: 'course/:courseId',
+		
 
   getChildRoutes(location, cb) {
     require.ensure([], (require) => {

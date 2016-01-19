@@ -15,7 +15,8 @@ class Dashboard extends React.Component {
         <ul>
           {courses.map(course => (
             <li key={course.id}>
-              <Link to={`/course/${course.id}`}>{course.name}</Link>
+           
+              <Link to={`/course/${course.id}`}><img width='200' src={`/images/${course.id}/${course.mainimage}`}>{course.name}</img></Link>
             </li>
           ))}
         </ul>

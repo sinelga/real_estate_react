@@ -1,1 +1,66 @@
-webpackJsonp([1],{126:function(n,t,e){"use strict";n.exports={path:"announcements",getChildRoutes:function(n,t){e.e(12,function(n){t(null,[e(128)])})},getComponents:function(n,t){e.e(8,function(n){t(null,{sidebar:e(125),main:e(124)})})}}},131:function(n,t,e){"use strict";n.exports={path:"assignments",getChildRoutes:function(n,t){e.e(10,function(n){t(null,[e(133)])})},getComponents:function(n,t){e.e(7,function(n){t(null,{sidebar:e(130),main:e(129)})})}}},135:function(n,t,e){"use strict";n.exports={path:"grades",getComponent:function(n,t){e.e(9,function(n){t(null,e(134))})}}}});
+webpackJsonp([1],{
+
+/***/ 221:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Calendar = function (_React$Component) {
+	  _inherits(Calendar, _React$Component);
+
+	  function Calendar() {
+	    _classCallCheck(this, Calendar);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Calendar).apply(this, arguments));
+	  }
+
+	  _createClass(Calendar, [{
+	    key: 'render',
+	    value: function render() {
+	      var events = [{ id: 0, title: 'essay due' }];
+
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Calendar'
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          null,
+	          events.map(function (event) {
+	            return _react2.default.createElement(
+	              'li',
+	              { key: event.id },
+	              event.title
+	            );
+	          })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Calendar;
+	}(_react2.default.Component);
+
+	module.exports = Calendar;
+
+/***/ }
+
+});
